@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact - Barit Yanaël</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			background: #393e41;
+			color: #e6fdfb;
+			font-family: 'Montserrat', Arial, sans-serif;
+		}
+		header {
+			width: 100vw;
+			background: #23272c;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 40px;
+			height: 60px;
+			box-sizing: border-box;
+		}
+		.logo {
+			font-family: 'Fira Mono', monospace;
+			font-size: 1.4rem;
+			color: #e6fdfb;
+			letter-spacing: 1px;
+		}
+		.logo span {
+			color: #3fffd6;
+		}
+		nav {
+			display: flex;
+			gap: 28px;
+			align-items: center;
+		}
+		nav a {
+			color: #e6fdfb;
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 2px 8px;
+			border-radius: 4px;
+			transition: background 0.2s, color 0.2s;
+			font-family: 'Fira Mono', monospace;
+		}
+		nav a.active, nav a:hover {
+			color: #3fffd6;
+			background: #23272c;
+		}
+		.socials {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+		}
+		.socials a {
+			color: #3fffd6;
+			font-family: 'Fira Mono', monospace;
+			font-size: 1rem;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			text-decoration: none;
+		}
+		.socials a img {
+			width: 18px;
+			height: 18px;
+			filter: brightness(0) invert(1);
+		}
+		.contact-container {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 60px 30px 0 30px;
+		}
+		.contact-title {
+			color: #3fffd6;
+			font-size: 2.3rem;
+			font-family: 'Montserrat', Arial, sans-serif;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.contact-list {
+			display: flex;
+			flex-direction: column;
+			gap: 28px;
+			margin-left: 60px;
+			max-width: 400px;
+		}
+		.contact-item {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			font-size: 1.15rem;
+			color: #e6fdfb;
+		}
+		.contact-item .icon {
+			width: 22px;
+			height: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+		}
+		.contact-item .icon img {
+			width: 22px;
+			height: 22px;
+			object-fit: contain;
+		}
+		.contact-item .contact-link {
+			color: #e6fdfb;
+			text-decoration: none;
+			transition: color 0.2s;
+		}
+		.contact-item .contact-link:hover {
+			color: #3fffd6;
+		}
+		.contact-item .contact-link.username {
+			color: #e6fdfb;
+		}
+		.contact-item .contact-link.instagram {
+			color: #ff4f8b;
+		}
+		.contact-item .contact-link.discord {
+			color: #7289da;
+		}
+		.contact-item .contact-link.github {
+			color: #b2c7c7;
+		}
+		@media (max-width: 700px) {
+			.contact-container {
+				padding: 30px 10px 0 10px;
+			}
+			.contact-list {
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	 <header>
+        <div class="logo"><span>&lt;C/&gt;</span> Barit Yanaël</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#">Projets</a>
+            <a href="#">Veille Info</a>
+            <a href="#">Stages</a>
+            <a href="conact.html" class="active">Contact</a>
+        </nav>
+        <div class="socials">
+            <a href="#"><img src="img/instagram-2-1-logo.svg" alt="Instagram"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="img/discord-tile.svg" alt="Discord"></a>
+            <a href="#"><img src="img/github-icon-1-logo.svg" alt="GitHub"></a>
+        </div>
+    </header>   
+	<div class="contact-container">
+		<div class="contact-title">Contactez Moi !</div>
+		<div class="contact-list">
+			<div class="contact-item"><span class="icon">📞</span> +33 06 38 60 76 61</div>
+			<div class="contact-item"><span class="icon"><img src="img/309678.svg" alt="Mail"></span> <a class="contact-link" href="mailto:yanael.brt@gmail.com">yanael.brt@gmail.com</a></div>
+			<div class="contact-item"><span class="icon"><img src="img/linkedin.svg" alt="LinkedIn"></span> <span class="contact-link username">?????</span></div>
+			<div class="contact-item"><span class="icon"><img src="img/instagram-2-1-logo.svg" alt="Instagram"></span> <a class="contact-link instagram" href="https://instagram.com/yanaelbrt" target="_blank">@yanaelbrt</a></div>
+			<div class="contact-item"><span class="icon"><img src="img/discord-tile.svg" alt="Discord"></span> <span class="contact-link discord">yanabar</span></div>
+			<div class="contact-item"><span class="icon"><img src="img/github-icon-1-logo.svg" alt="Github"></span> <a class="contact-link github" href="https://github.com/yana-el" target="_blank">yana-el</a></div>
+		</div>
+	</div>
+</body>
+</html>
